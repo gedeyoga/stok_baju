@@ -68,7 +68,7 @@ class BajuController extends Controller
      */
     public function edit($id)
     {
-        $data = Baju::find($id)->get()->first();
+        $data = Baju::find($id);
         return view('baju.edit' , [
             'data' => $data
         ]);

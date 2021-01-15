@@ -25,11 +25,21 @@
                     <td>{{ ucwords($d->name) }}</td>
                     <td>{{ ucwords($d->email) }}</td>
                     <td class="d-flex">
-                        <a href="{{ route('user.edit' , $d->id) }}" class="btn btn-primary mr-2 btn-sm">Edit</a>
+                        <a href="{{ route('user.show' , $d->id) }}" class="btn btn-success mr-2 btn-sm">
+                            <i class="fas fa-info"></i>
+                            Detail
+                        </a>
+                        <a href="{{ route('user.edit' , $d->id) }}" class="btn btn-primary mr-2 btn-sm">
+                            <i class="fas fa-pen"></i>
+                            Edit
+                        </a>
                         <form action="{{ route('user.destroy' , $d->id) }}" method="post">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger btn-sm" type="submit" name="delete">Hapus</button>
+                            <button class="btn btn-danger btn-sm" type="submit" name="delete">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
                         </form>
                     </td>
                 </tr>

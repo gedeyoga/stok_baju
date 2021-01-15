@@ -15,7 +15,8 @@ class CreateStokBajuTable extends Migration
     {
         Schema::create('stok_baju', function (Blueprint $table) {
             $table->id();
-            $table->integer('baju_id');
+            $table->unsignedBigInteger('baju_id');
+            $table->foreign('baju_id')->references('id')->on('baju')->onDelete('cascade');
             $table->integer('small')->nullable();
             $table->integer('medium')->nullable();
             $table->integer('large')->nullable();

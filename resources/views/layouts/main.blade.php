@@ -57,19 +57,19 @@
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="{{ route('user.index') }}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-fw fa-users"></i>
           <span>User</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('baju.index') }}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-fw fa-box"></i>
           <span>Data Baju</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('stok.index') }}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-fw fa-boxes"></i>
           <span>Stok Baju</span>
         </a>
       </li>
